@@ -23,9 +23,9 @@ class App < Sinatra::Base
   end
   
   get "/say/:word1/:word2/:word3/:word4/:word5" do
-    @number = params[:number].to_i
+    @number = params[:number]
     @phrase = params[:phrase]
-    @x = 0
+    @x = @number.to_i
     until @x == 5
       "@phrase"
       @x += 1
