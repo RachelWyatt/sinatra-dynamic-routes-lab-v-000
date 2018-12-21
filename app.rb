@@ -18,19 +18,12 @@ class App < Sinatra::Base
   get "/say/:number/:phrase" do
     @number = params[:number]
     @phrase = params[:phrase]
-    #Need to figure out why phrase isn't printing correctly.
-    "#{@phrase}"
-  end
-  
-  get "/say/:word1/:word2/:word3/:word4/:word5" do
-    @number = params[:number]
-    @phrase = params[:phrase]
-    @x = 0
     until @x == @number.to_i
       "@phrase"
       @x += 1
     end
   end
+
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     @word1 = params[:word1]
