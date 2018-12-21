@@ -43,9 +43,9 @@ class App < Sinatra::Base
       @solution = (@number1.to_i) + (@number2.to_i)
       elsif @operation == "subtract"
       @solution = (@number1.to_i) - (@number2.to_i)
-      elsif @operation = "multiply" 
+      elsif @operation == "multiply" 
       @solution = (@number1.to_i) * (@number2.to_i)
-      elsif @operation = "divide"
+      elsif @operation == "divide"
       @solution = (@number1.to_i) / (@number2.to_i)
     else
       puts "Do you know math?"
