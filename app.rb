@@ -16,13 +16,14 @@ class App < Sinatra::Base
   end
   
   get "/say/:number/:phrase" do
-    @number = params[:number]
-    @phrase = params[:phrase]
-    @x = 1
-    until @x == @number.to_i + 1
-      "@phrase"
-      @x += 1
-    end
+    puts "Hello world"
+   # @number = params[:number]
+    #@phrase = params[:phrase]
+    #@x = 1
+    #until @x == @number.to_i + 1
+    #  "@phrase"
+    #  @x += 1
+    #end
   end
 
   
