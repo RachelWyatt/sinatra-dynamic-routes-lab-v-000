@@ -16,7 +16,6 @@ class App < Sinatra::Base
   end
   
   get "/say/:number/:phrase" do
-<<<<<<< HEAD
     @number = params[:number]
     @phrase = params[:phrase]
     #Need to figure out why phrase isn't printing correctly.
@@ -24,7 +23,6 @@ class App < Sinatra::Base
   end
   
   get "/say/:word1/:word2/:word3/:word4/:word5" do
-=======
     @number = params[:number].to_i
     @phrase = params[:phrase]
     @x = 0
@@ -34,7 +32,6 @@ class App < Sinatra::Base
   end
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do
->>>>>>> a48b4418fb3ae4d4e05792d40bc7418935840769
     @word1 = params[:word1]
     @word2 = params[:word2]
     @word3 = params[:word3]
@@ -43,8 +40,6 @@ class App < Sinatra::Base
     "#{@word1} #{@word2} #{@word3} #{@word4} #{@word5}."
   end
   
-<<<<<<< HEAD
-  #How to integrate the operation?
   get "/:operation/:number1/:number2" do
     @operation = params[:operation]
     @number1 = params[:number1]
@@ -52,14 +47,5 @@ class App < Sinatra::Base
     @solution = (@number1.to_i) + (@number2.to_i)
     "#{@solution}"
   end
-  
-=======
-  
-  get '/:operation/:number1/:number2'
-    @operation = params[:operation]
-   @number1 = params[:number1]
-    @solution = (@number1.to_i) + (@number2.to_i)
-    "#{@solution}"
-  end
->>>>>>> a48b4418fb3ae4d4e05792d40bc7418935840769
+
 end
